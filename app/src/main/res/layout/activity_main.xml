@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ghostWhite"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Questions"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardCornerRadius="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="120dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ucc"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/question1Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/question2Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 2"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_margin="5dp" />
+        <Button
+            android:id="@+id/question3Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 3"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_margin="15dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
